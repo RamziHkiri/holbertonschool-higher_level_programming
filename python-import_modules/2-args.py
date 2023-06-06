@@ -6,7 +6,7 @@ if __name__ == "__main__":
     if arg_n == 0:
         print("0 arguments.")
     else:
-        print("{} {}".format(arg_n, "arguments" if arg_n > 1 else "argument"))
+        print("{} {}:".format(arg_n, "arguments" if arg_n > 1 else "argument"))
         i = 0
         for arg in sys.argv[1:]:
             i += 1
