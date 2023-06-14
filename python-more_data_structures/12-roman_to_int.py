@@ -20,7 +20,4 @@ def roman_to_int(roman_string):
             else:
                 sum = roman_numbers[char] - sum
             prev_val = roman_numbers[char]
-        else:
-            sum = 0
-            break
     return sum
