@@ -14,7 +14,7 @@ class Square:
         self.size = size
 
     def size(self):
-        return self.size
+        return self.__size
 
     def size(self, value):
         if type(value) is not int:
