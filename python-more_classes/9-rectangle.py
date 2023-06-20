@@ -72,7 +72,7 @@ class Rectangle:
             return rec_string
 
     def __repr__(self):
-        """c"""
+        """retrun a representation  for the rectangle """
         return("Rectangle({}, {})".format(self.__width, self.__height))
 
     def __del__(self):
