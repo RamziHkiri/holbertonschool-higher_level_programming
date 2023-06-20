@@ -61,6 +61,7 @@ class Rectangle:
             return (self.__width * 2 + self.__height * 2)
 
     def __str__(self):
+        """print rectangle using print_symbol"""
         if self.__height == 0 or self.__width == 0:
             return ""
         else:
@@ -71,9 +72,11 @@ class Rectangle:
             return rec_string
 
     def __repr__(self):
+        """c"""
         return("Rectangle({}, {})".format(self.__width, self.__height))
 
     def __del__(self):
+        """print message bye rectangle whe wen delete a rectangle instance"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
@@ -92,4 +95,5 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """create a square using rectangle class"""
         return cls(size, size)
