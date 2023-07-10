@@ -93,3 +93,13 @@ class Rectangle(Base):
                 self.print_symbol) * self.__width + "\n"
         rec_string += " " * self.__x + str(self.print_symbol) * self.__width
         print(rec_string)
+
+    def __str__(self):
+        """"""
+        string = "[" + self.__class__.__name__ + "] " + (
+            "({}) {}/{} - {}/{}".format(
+                self.id, self.__x, self.__y, self.__width, self.__height))
+        return string
+
+    def update(self, *args):
+        """assigns an argument to each attribute"""
