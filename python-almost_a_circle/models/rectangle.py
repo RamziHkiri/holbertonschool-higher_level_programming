@@ -85,6 +85,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
+        """display rectangle using #"""
         rec_string = ""
         for i in range(0, self.__height - 1):
             rec_string += str(self.print_symbol) * self.__width + "\n"
