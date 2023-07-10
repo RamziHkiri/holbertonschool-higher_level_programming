@@ -12,6 +12,7 @@ class Rectangle(Base):
         y: y value
         id:the id of the rectangle instance
     """
+    print_symbol = "#"
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -82,3 +83,10 @@ class Rectangle(Base):
     def area(self):
         """area's rectangle method"""
         return self.__width * self.__height
+
+    def display(self):
+        rec_string = ""
+        for i in range(0, self.__height - 1):
+            rec_string += str(self.print_symbol) * self.__width + "\n"
+        rec_string += str(self.print_symbol) * self.__width
+        print(rec_string)
