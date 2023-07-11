@@ -26,3 +26,10 @@ class Square(Rectangle):
         """size setter"""
         self.width = value
         self.height = value
+
+    def __str__(self):
+        """"""
+        string = "[" + self.__class__.__name__ + "] " + (
+            "({}) {}/{} - {}".format(
+                self.id, self.x, self.y, self.width))
+        return string
