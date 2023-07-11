@@ -19,7 +19,7 @@ class Base:
         self.id = id
 
     def to_json_string(list_dictionaries):
-        """_summary_
+        """JSON string representation
 
         Args:
             list_dictionaries (dictionary): _description
