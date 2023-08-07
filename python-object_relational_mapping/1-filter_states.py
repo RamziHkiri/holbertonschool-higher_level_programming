@@ -17,7 +17,7 @@ if __name__ == "__main__":
     cursor.execute(query)
     states = cursor.fetchall()
     for state in states:
-        if state[1][0] == 'N':
+        if state[0] == 'N':
             print(state)
     cursor.close()
     db.close()
