@@ -1,6 +1,7 @@
-=========================
 2-matrix_divided function
 =========================
+Using "matrix_divided"
+-----------------------
 
 This function takes in two arguments. The first is a matrix which is divided by the second argument, an integer or float.
 
