@@ -1,10 +1,10 @@
-The ``add_integer`` module
+The "add_integer" module
 ==========================
 
-Using ``add_integer``
+Using "add_integer"
 ---------------------
 
-import ``add_integer`` from the ``add_integer`` module:
+import "add_integer" from the "add_integer" module:
 
 	>>> add_integer = __import__('0-add_integer').add_integer
 
