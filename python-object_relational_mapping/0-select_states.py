@@ -12,11 +12,11 @@ if __name__ == "__main__":
     MY_DB = argv[3]
     db = MySQLdb.connect(host=HOST, user=MY_USER, password=MY_PSWD,
                          db=MY_DB, port=PORT)
-    cur = db.cursor()
+    cursor = db.cursor()
     query = "SELECT * FROM states ORDER BY id"
-    cur.execute(query)
-    rowquery = cur.fetchall()
-    for qprint in rowquery:
-        print(qprint)
-    cur.close()
+    cursor.execute(query)
+    states = cursor.fetchall()
+    for state in states:
+        print(state)
+    cursor.close()
     db.close()
